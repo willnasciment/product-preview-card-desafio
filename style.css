@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 14px;
+}
+
+main {
+    display: flex;
+    max-width: 1440px;
+    
+}
+
+.foto-perfume {
+    width: 300px;
+    border-radius: 10px 0 0 10px;
+}
+
+.text {
+    background-color: hsl(0, 0%, 100%);
+    padding: 35px;
+    border-radius: 0 10px 10px 0;
+}
+
+.text h1 {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.text h2 {
+    color: hsl(212, 21%, 14%);
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin-bottom: 20px;
+    line-height: 30px; /* espaçamento entre linhas */
+}
+
+.text p {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    line-height: 23px; 
+    margin-bottom: 25px;
+}
+
+.text .valor {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.text .valor span:first-child {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+
+}
+
+.text .valor span:last-child {
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    margin-left: 20px;
+}
+
+.text .button{
+    display: flex;
+    justify-content: center;
+    color: hsl(0, 0%, 100%);
+    font-family: 'Montserrat', sans-serif;
+    background-color: hsl(158, 36%, 37%);
+    padding: 15px;
+    margin-top: 25px;
+    align-items: center;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.text .button:hover {
+    background-color: hsl(158deg 79% 12%);
+}
+
+.text .button img {
+    margin-right: 10px;
+}
+    
+ @media(max-width: 620px)  {
+    main {
+        max-width: 375px;
+        display: block;
+    }       
+    .foto-perfume {
+        width: 100%;
+        border-radius: 10px 10px 0 0;
+        margin-bottom: -20px;
+    }
+    
+    .text {
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+    }
+}
+    
+   
